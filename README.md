@@ -165,7 +165,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 Copy the playbook file to Ansible Control Node.
-Playbooks for Filebeat and Mtricbeat are also here: [filebeat](Playbooks/filebeat-playbook.yml) and [microbeat](Playbooks/microbeat-playbook.yml)
  
 ```
 $ cd /etc/ansible
@@ -189,10 +188,10 @@ $ cat > hosts <<EOF
 10.0.0.4
 EOF
 ```
-- Run the playbook, and navigate to Kibana (http://[Host IP]/app/kibana#/home) to check that the installation worked as expected.
+- Run the playbook, and navigate to Kibana (http://[52.191.167.229]/app/kibana#/home) to check that the installation worked as expected.
 ```
 cd /etc/ansible
  $ ansible-playbook install_elk.yml elk
  $ ansible-playbook install_filebeat.yml webservers
  ```
- - Check that the ELK server is running: http://[Host IP]/app/kibana#/home 
+ - Check that the ELK server is running: http://[52.191.167.229]/app/kibana#/home 
