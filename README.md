@@ -109,7 +109,7 @@ Only the jump box provisioner machine can accept connections from the Internet. 
 Machines within the network can only be accessed by jump box provisioner.
 
 Which machine did you allow to access your ELK VM? 
-- My IP Address: 72.179.7.89
+- My IP Address: 99.122.6.55
 
 A summary of the access policies in place can be found in the table below.
 
@@ -140,7 +140,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance. 
 
-![docker ps](docker ps elk.PNG)
+(docker ps elk.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
