@@ -140,6 +140,8 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance. 
 
+[docker ps](https://github.com/allicoleman/cybersec-elk-stack/issues/1#issue-806071247)
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 -Private IPs of Web-1 and Web-2
