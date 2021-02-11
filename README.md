@@ -148,8 +148,8 @@ This ELK server is configured to monitor the following machines:
 
 | Name      | IP Addresses         |
 |---------- |----------------------|
-| Web-1     | 10.0.0.5             |
-| Web-2     | 10.0.0.6             |
+| Web-1     | 10.1.0.5             |
+| Web-2     | 10.1.0.6             |
                   
 
 We have installed the following Beats on these machines:
@@ -171,9 +171,9 @@ Playbooks for Filebeat and Mtricbeat are also here: [filebeat](Playbooks/filebea
 $ cd /etc/ansible
 $ mkdir files
 # Clone Repository + IaC Files
-$ git clone https://github.com/TenkiYamada/Project-1-ELK-Stack-Project.git
+$ git clone https://github.com/allicoleman/cybersec-elk-stack.git
 # Move Playbooks and hosts file Into `/etc/ansible`
-$ cp /Project-1-ELK-Stack-Project/ReadMe/Playbooks/*
+$ cp /cybersec-elk-stack/ReadMe/Playbooks/*
 ```
 - Update the hosts file to include webserver and elk
 - Edit hosts file to update and to make Ansible run the playbook on a specific machine, and specify which machine to install the ELK server on versus which to install Filebeat.
@@ -182,11 +182,11 @@ $ cp /Project-1-ELK-Stack-Project/ReadMe/Playbooks/*
 $ cd /etc/ansible
 $ cat > hosts <<EOF
 [webservers]
-10.0.0.7
-10.0.0.8
+10.1.0.5
+10.1.0.6
 
 [elk]
-10.1.0.4
+10.0.0.4
 EOF
 ```
 - Run the playbook, and navigate to Kibana (http://[Host IP]/app/kibana#/home) to check that the installation worked as expected.
@@ -194,6 +194,5 @@ EOF
 cd /etc/ansible
  $ ansible-playbook install_elk.yml elk
  $ ansible-playbook install_filebeat.yml webservers
- $ ansible-playbook install_metricbeat.yml webservers
  ```
  - Check that the ELK server is running: http://[Host IP]/app/kibana#/home 
