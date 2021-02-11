@@ -198,3 +198,4 @@ cd /etc/ansible
  $ ansible-playbook install_filebeat.yml webservers
  ```
  - Check that the ELK server is running: http://[52.191.167.229]/app/kibana#/home 
+ ![running](https://github.com/allicoleman/cybersec-elk-stack/blob/main/Images/kibana.%20project%201.PNG?raw=true)
