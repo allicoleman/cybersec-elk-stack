@@ -189,6 +189,9 @@ $ cat > hosts <<EOF
 EOF
 ```
 - Run the playbook, and navigate to Kibana (http://[52.191.167.229]/app/kibana#/home) to check that the installation worked as expected.
+
+![install success](https://github.com/allicoleman/cybersec-elk-stack/blob/main/Images/kibana%20project%201.PNG?raw=true)
+
 ```
 cd /etc/ansible
  $ ansible-playbook install_elk.yml elk
